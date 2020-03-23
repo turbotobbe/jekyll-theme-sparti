@@ -1,0 +1,15 @@
+body {
+  font-size: 19px;
+  line-height: 1.4em;
+}
+
+h1,h2,h3,h4,h5,h6 { font-weight: 500; }
+h1 { font-size: 43px; }
+h2 { font-size: 36px; }
+h3 { font-size: 31px; }
+h4 { font-size: 22px; }
+h5 { font-size: 20px; }
+
+Open-Sans
+
+width: { 700px; }
