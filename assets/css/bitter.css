@@ -1,0 +1,26 @@
+/* https://www.huertatipografica.com/es/fonts/bitter-ht */
+@font-face {
+    font-family: Bitter;
+    font-weight: normal;
+    src: url("Bitter-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Bitter;
+  font-weight: bold;
+  src: url("Bitter-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Bitter;
+  font-weight: normal;
+  font-style: italic;
+  src: url("Bitter-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Bitter;
+  font-weight: bold;
+  font-style: italic;
+  src: url("Bitter-BoldItalic.otf") format("opentype");
+}
