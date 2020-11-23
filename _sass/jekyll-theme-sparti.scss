@@ -1,187 +1,15 @@
 @import "normalize";
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import "rouge-github";
 
-@mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
-    @content;
-  }
-}
-
+/* cayman */
 * {
   box-sizing: border-box;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: $body-text-color;
-}
-
-#skip-to-content {
-  height: 1px;
-  width: 1px;
-  position: absolute;
-  overflow: hidden;
-  top: -10px;
-
-  &:focus {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    height: auto;
-    width: auto;
-    background: invert($body-link-color);
-    outline: thick solid invert($body-link-color);
-  }
-}
-
-a {
-  color: $body-link-color;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  + .btn {
-    margin-left: 1rem;
-  }
-
-  @include large {
-    padding: 0.75rem 1rem;
-  }
-
-  @include medium {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
-
-  @include small {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
-  }
-}
-
-.page-header {
-  color: $header-heading-color;
-  text-align: center;
-  background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
-
-  @include large {
-    padding: 5rem 6rem;
-  }
-
-  @include medium {
-    padding: 3rem 4rem;
-  }
-
-  @include small {
-    padding: 2rem 1rem;
-  }
-}
-
-.project-name {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
-
-  @include large {
-    font-size: 3.25rem;
-  }
-
-  @include medium {
-    font-size: 2.25rem;
-  }
-
-  @include small {
-    font-size: 1.75rem;
-  }
-}
-
-.project-tagline {
-  margin-bottom: 2rem;
-  font-weight: normal;
-  opacity: 0.7;
-
-  @include large {
-    font-size: 1.25rem;
-  }
-
-  @include medium {
-    font-size: 1.15rem;
-  }
-
-  @include small {
-    font-size: 1rem;
-  }
-}
-
-.main-content {
+article {
   word-wrap: break-word;
-
-  :first-child {
-    margin-top: 0;
-  }
-
-  @include large {
-    max-width: 64rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-
-  @include medium {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
-  }
-
-  @include small {
-    padding: 2rem 1rem;
-    font-size: 1rem;
-  }
-
   kbd {
     background-color: #fafbfc;
     border: 1px solid #c6cbd1;
@@ -198,22 +26,6 @@ a {
 
   img {
     max-width: 100%;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-weight: normal;
-    color: $section-headings-color;
-  }
-
-  p {
-    margin-bottom: 1em;
   }
 
   code {
@@ -294,6 +106,7 @@ a {
     padding: 0 1rem;
     margin-left: 0;
     color: $blockquote-text-color;
+    font-style: italic;
     border-left: 0.3rem solid $border-color;
 
     > :first-child {
@@ -349,29 +162,182 @@ a {
   }
 }
 
-.site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
+/* sparti */
 
-  @include large {
-    font-size: 1rem;
-  }
-
-  @include medium {
-    font-size: 1rem;
-  }
-
-  @include small {
-    font-size: 0.9rem;
-  }
+body, html {
+  margin: 0px;
+  padding: 0px;
+  background-color: $brand-black;
+  color: $brand-white;
+  line-height: 1.7rem;
+  font-size: $brand-font-size;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 4.05rem;
+  text-align: center;
 }
 
-.site-footer-owner {
-  display: block;
-  font-weight: bold;
+h2 {
+  font-size: 2.05rem;
+  line-height: 3.25rem;
 }
 
-.site-footer-credits {
-  color: $blockquote-text-color;
+h3 {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 2.05rem;
+}
+
+h5 {
+  font-size: 1.0rem;
+  line-height: 1.7rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+header, footer {
+  text-align: center;
+  background-color:  $brand-black;
+  color: $brand-white;
+  border-radius: 0px;
+  z-index: 1;
+  position: relative;
+}
+header {
+  padding: 2rem 0rem 4rem 0rem;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+footer {
+  padding: 4rem 0rem 1rem 0rem;
+  box-shadow: 0px -2px 1px -1px rgba(0,0,0,0.2),0px -1px 1px 0px rgba(0,0,0,0.14),0px -1px 3px 0px rgba(0,0,0,0.12);
+}
+
+main {
+  max-width: 45rem;
+  margin: -3rem auto;
+  background-color: $brand-white;
+  box-shadow: 0px 0px 5px #888888;
+  padding: 3rem 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+article {
+  max-width: 33rem;
+  margin: auto;
+}
+
+.page {
+  background-color: white;
+  color: $brand-black;
+  position: relative;
+  z-index: 0;
+}
+
+.info {
+  text-align: right;
+}
+
+/* ----- ----- */
+main > article  > p:first-of-type {
+/*  font-size: 1.2rem; */
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+main > article h1:first-of-type {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.meta {
+  font-style: italic;
+  text-align: right;
+}
+
+a {
+  color: $brand-red; /* brand red */
+}
+a:visited {
+  color: $brand-visited;
+}
+a:hover {
+  color: $brand-hover;
+}
+a:focus {
+  background-color: $brand-red;
+  color: $brand-white;
+  outline: 0;
+}
+
+/* --- */
+
+a.logo {
+  display: inline-block;
+}
+a.logo:focus {
+  background-color: $brand-red;
+}
+
+svg .fill-red {
+  fill: $brand-red
+}
+svg .fill-white {
+  fill: $brand-white
+}
+svg .fill-black {
+  fill: $brand-black
+}
+
+a.logo:focus svg .fill-white {
+  fill: $brand-white;
+}
+a.logo:focus svg .fill-red {
+  fill: $brand-black;
+}
+
+a.logo:hover svg .fill-white {
+  fill: $brand-red-darker;
+}
+a.logo:hover svg .fill-red {
+  fill: $brand-red-darker;
+}
+
+/*
+https://juicystudio.com/services/luminositycontrastratio.php#specify
+#D22730 -> #FFFFFF
+The contrast ratio is: 5.16:1
+
+https://www.cssfontstack.com/oldsites/hexcolortool/?_ga=1.125546506.1671817461.1433145644
+HTML:#D22730, RGB:210  39  48, ORIGINAL
+HTML:#B90E17, RGB:185  14  23, DARKENED:10%
+HTML:#9F0000, RGB:159  0  0, DARKENED:20%
+HTML:#860000, RGB:134  0  0, DARKENED:30%
+HTML:#6C0000, RGB:108  0  0, DARKENED:40%
+HTML:#530000, RGB:83  0  0, DARKENED:50%
+*/
+
+@media print {
+  main {
+    max-width: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
 }
