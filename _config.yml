@@ -1,5 +1,7 @@
 title: Sparti theme
 description: Jekyll theme for sparti.se
-show_downloads: false
+author:
+  name: Thobias Bergqvist
+  mail: thobias.bergqvist@sparti.se
 google_analytics:
 theme: jekyll-theme-sparti

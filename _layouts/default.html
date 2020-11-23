@@ -16,36 +16,34 @@
   </script>
   {% endif %}
 
-  <meta charset="UTF-8"> {% seo %}
+  <meta charset="UTF-8">
+{% seo %}
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#2D2926">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="stylesheet" href="{{ '/assets/css/sparti.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/sparti.css' | relative_url }}">
 </head>
 
 <body>
 
-  <!-- wrapper -->
-  <div class="page-wrapper">
+  <div class="page">
 
-    <!-- header -->
-    <header class="page-header no-print">
-      <a href="/"><img class="logo" src="/assets/images/SPARTI_logo_white_color.png" alt="{{ site.title }}"></a>
-    </header>
+    {% include header.html %}
 
-    <!-- nav -->
-    <!-- <nav> </nav> -->
-
-    <!-- main -->
     <main>
-      {{ content }}
+      <article class="main-content">
+        <h1>{{ page.title | default: site.title }}</h1>
+        {{ content }}
+        <div class="info">
+          <div class="page-date">{{ page.date | default: site.time | date_to_string }}</div>
+          <div class="page-author"><a href="mailto:{{ page.author.mail | default: site.author.mail }}">{{ page.author.name | default: site.author.name }}</a></div>
+        </div>
+      </article>
     </main>
 
-    <!-- footer -->
-    <footer class="page-footer no-print">
-      Copyright (C) 2013. All rights reserved.
-    </footer>
+    {% include footer.html %}
+
   </div>
 
 </body>

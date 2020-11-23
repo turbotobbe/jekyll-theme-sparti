@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Sokrates försvarstal
 author:
   name: Thobias Bergqvist
@@ -8,7 +8,6 @@ date: 2019-04-16
 ---
 
 Sokrates försvarstal (grekiska Ἀπολογία Σωκράτους) är en (troligen) tidig text av Platon i vilken han återger det försvarstal Sokrates skall ha hållit år 399 f.Kr. vid den rättegång där han dömdes till döden av atenarna. Den kallas även Apologin eller bara Försvarstalet. I den återger Sokrates anklagelserna mot sig själv som ogudaktig och en ungdomens förförare.
-
 
 Sokrates inför sina domare av italienske skulptören Renzo Colombo (1856-1885), visad vid Salon des Artistes Français (1884) i Paris, Frankrike.
 Sokrates berättar sedan hur han fick sitt heliga kall. Då en vän frågade oraklet i Delfi vem som var visast i hela världen blev orakelsvaret: Sokrates. Eftersom Sokrates själv tyckte sig vara mycket okunnig tyckte han oraklets svar var märkligt. Det var ju fel, men det kom å andra sidan från Gud (Apollon), och Guden ljuger rimligtvis inte. Alltså bestämde sig Sokrates för att testa oraklet genom att försöka vederlägga vad det sagt. Han gick runt och intervjuade folk och fann efter att ha talat med såväl skomakare som domare att folk trodde sig veta saker som de egentligen inte visste ett dugg om. Viktigast var då rättvisa, vilket på klassisk grekiska (dikaiosyne, Δικαιοσύνη) är en samlande beteckning för sann insikt om vad som är rätt och fel i livet. Slutligen kom Sokrates på att oraklet haft rätt, fast det oraklet sagt som vanligt utgjort ett slags paradox. Därmed formulerar Sokrates det uttalande som kanske mer än något annat gjort honom berömd i alla tider. Sokrates inser hur litet han vet, och det är det som gör honom till den visaste, eller klokaste, eller kunnigaste, i världen. I grekiskan inringar dessa ord detsamma. Kunskap sågs lika gärna i termer av kompetens som den likställdes med funktionalitet och skönhet. En god man (agathos) var på något vis både kunnig, stark, praktiskt duglig och skön att se på. Sokrates berömda fulhet gjorde därmed hans framträdande – som den ende insiktsfulle och sant gode – extra kraftfullt och utmanande.

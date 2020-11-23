@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Lorem ipsum
 author:
   name: Thobias Bergqvist
@@ -7,10 +7,12 @@ author:
 date: 2019-03-09
 ---
 
-## lorem 80
+Det här är några olika paragrafer som innehåller olika många tecken. Detta för att underlätta för att se hur bred texten blir.
+Siffran i början anger hur många tecken paragrafen innehåller.
+
 80 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem
 
-160 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+160 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quist
 
 240 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Du
 
