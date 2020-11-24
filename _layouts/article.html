@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+  <div class="info">
+    <div class="page-date">{{ page.date | default: site.time | date_to_string }}</div>
+    <div class="page-author"><a href="mailto:{{ page.author.mail }}">{{ page.author.name }}</a></div>
+  </div>
+</article>

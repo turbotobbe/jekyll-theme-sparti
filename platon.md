@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Sokrates försvarstal
 author:
   name: Thobias Bergqvist

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " sv-SE " }}">
-
+<html lang="{{ site.lang | default: "sv-SE" }}">
 <head>
 
   {% if site.google_analytics %}
@@ -24,28 +23,15 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="{{ '/assets/css/sparti.css' | relative_url }}">
 </head>
-
-<body>
-
-  <div class="page">
-
+<body class="{{ page.body_class }}">
+  <div class="main-wrapper">
     {% include header.html %}
-
     <main>
-      <article class="main-content">
-        <h1>{{ page.title | default: site.title }}</h1>
+      <div class="content-wrapper">
         {{ content }}
-        <div class="info">
-          <div class="page-date">{{ page.date | default: site.time | date_to_string }}</div>
-          <div class="page-author"><a href="mailto:{{ page.author.mail | default: site.author.mail }}">{{ page.author.name | default: site.author.name }}</a></div>
-        </div>
-      </article>
+      </div>
     </main>
-
     {% include footer.html %}
-
   </div>
-
 </body>
-
 </html>
