@@ -1,15 +1,10 @@
 ---
 layout: default
-title: Format
 ---
-The first paragraph of a page is always treated as an ingress. This will generate an overview of the page for the once that do not have time to read the full thing.
-
-The second paragraph is just plain text. Use nice short sentences and not to long paraghraphs in total. This will ensure the reader does not have to think to much.
-Instead he or she can consentrate on reading.
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+[Link to another page](./lorem.html).
 
 There should be whitespace between paragraphs.
 

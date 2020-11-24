@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Tiden före Gösta Berlings saga
 author:
   name: Lisbeth Stenberg

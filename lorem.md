@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Lorem ipsum
 author:
   name: Thobias Bergqvist
