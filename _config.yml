@@ -3,6 +3,6 @@ description: This is a Jekyll theme for sparti.se GitHub Pages
 contact:
   mail: help@site.com
 google_analytics:
-theme: jekyll-theme-sparti
+remote_theme: turbotobbe/jekyll-theme-sparti
 plugins:
   - jekyll-seo-tag
