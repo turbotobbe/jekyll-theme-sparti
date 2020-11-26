@@ -216,7 +216,7 @@ header, footer {
   position: relative;
 }
 header {
-  padding: 2rem 0rem 4rem 0rem;
+  padding: 2rem 0rem 5rem 0rem;
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 footer {
@@ -269,37 +269,61 @@ body main article h1:first-of-type {
   font-style: italic;
   text-align: right;
 }
-
 a {
-  color: $brand-red;
-  /*
-  &:visited {
-    color: $brand-red-dark;
-  }
-  */
-  &:focus {
-    outline: $brand-red solid 4px;
-  }
-  &:hover {
-    color: $brand-red-light;
-    &:focus {
-      outline: $brand-red-light solid 4px;
-    }
-    &:active {
-      background-color: $brand-red-light;
-      color: $brand-white;
-    }
+  color: $link-color;
+  outline-offset: 2px;
+  &:hover, &:focus {
+    // background: $link-color;
+    // color: #FFFFFF;
+    // outline: inherit;
+    outline: $link-color solid 4px;
   }
   &:active {
-    background-color: $brand-red;
-    color: $brand-white;
+    // background: $link-active-color;
+    // color: #FFFFFF;
+    // outline: inherit;
+    outline: $link-active-color solid 4px;
+    color: $link-active-color;
+    &:hover, &:focus {
+      // background: $link-active-color;
+      // color: #FFFFFF;
+      // outline: inherit;
+      outline: $link-active-color solid 4px;
+      color: $link-active-color;
+    }
+  }
+  &:visited {
+    color: $link-visited-color;
+    &:hover, &:focus {
+      // background: $link-visited-color;
+      // color: #FFFFFF;
+      // outline: inherit;
+      outline: $link-visited-color solid 4px;
+      color: $link-visited-color;
+    }
+    &:active {
+      // background: $link-active-color;
+      // color: #FFFFFF;
+      // outline: inherit;
+      outline: $link-active-color solid 4px;
+      color: $link-active-color;
+      &:hover, &:focus {
+        // background: $link-active-color;
+        // color: #FFFFFF;
+        // outline: inherit;
+        outline: $link-active-color solid 4px;
+        color: $link-active-color;
+      }
+    }
   }
 }
 
 /* --- */
 
 a.logo {
+  background: transparent;
   display: inline-block;
+  color: #FFFFFF;
   svg .fill-red {
     fill: $brand-red;
   }
@@ -310,18 +334,24 @@ a.logo {
     fill: $brand-black;
   }
 
-  &:hover {
-    color: $brand-red-light;
-    svg .fill-red {
-      fill: $brand-red-light;
-    }
+  &:hover, &:focus {
+    background: transparent;
+    outline: $link-logo-focus-color solid 8px;
   }
   &:active {
+    background: transparent;
+    outline: $link-logo-active-color solid 8px;
     svg .fill-red {
-      fill: $brand-black;
+      fill: $link-logo-active-color;
+    }
+    &:hover, &:focus {
+      background: transparent;
+      outline: $link-logo-active-color solid 8px;
+      svg .fill-red {
+        fill: $link-logo-active-color;
+      }
     }
   }
-
 }
 
 /*

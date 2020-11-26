@@ -32,16 +32,15 @@ $font-size-small: 16px;
 $brand-font-size: 18px;
 
 $brand-red: #D22730;
-$brand-red-dark: #9F0000;
-$brand-red-light: #EC414A;
-
 $brand-black: #2D2926;
 $brand-white: #FFFFFF;
 
-// $brand-red-darker: #B90E17; /* dark 10% */
-// $brand-red-lighter: #B90E17; /* dark 10% */
+$link-color: blue;
+$link-visited-color: purple;
+$link-focus-color: $link-color;
+$link-active-color: $brand-red;
 
-// $brand-visited: #9F0000; /* dark 20% */
-// $brand-hover: #6C0000; /* dark 40% */
+$link-logo-focus-color: $brand-red;
+$link-logo-active-color: lighten($link-logo-focus-color, 10%);
 
 $blockquote-text-color: lighter($brand-black, 10%) !default;
