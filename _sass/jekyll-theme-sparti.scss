@@ -3,14 +3,13 @@
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import "rouge-github";
 
-/* cayman */
 * {
   box-sizing: border-box;
 }
 
 .content-wrapper {
   word-wrap: break-word;
-  kbd {
+  /* kbd {
     background-color: #fafbfc;
     border: 1px solid #c6cbd1;
     border-bottom-color: #959da5;
@@ -22,7 +21,7 @@
     line-height: 10px;
     padding: 3px 5px;
     vertical-align: middle;
-  }
+  } */
 
   img {
     max-width: 100%;
@@ -96,6 +95,9 @@
       content: normal;
     }
   }
+  code.highlighter-rouge {
+    color: $brand-red;
+  }
 
   ul,
   ol {
@@ -108,7 +110,6 @@
     color: $blockquote-text-color;
     font-style: italic;
     border-left: 0.3rem solid $border-color;
-
     > :first-child {
       margin-top: 0;
     }
@@ -119,14 +120,16 @@
   }
 
   table {
-    display: block;
+/*    display: block; */
     width: 100%;
     overflow: auto;
     word-break: normal;
     word-break: keep-all; // For Firefox to horizontally scroll wider tables.
     -webkit-overflow-scrolling: touch;
-
+    border-collapse: collapse;
     th {
+      background-color: $brand-black;
+      color: $brand-white;
       font-weight: bold;
     }
 
@@ -205,6 +208,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  color: $brand-red;
 }
 
 header, footer {
@@ -246,9 +250,7 @@ main {
   margin: auto;
 }
 
-body.error .main-wrapper {
-  background-color: $brand-red;
-  color: $brand-black;
+body.error h1 {
 }
 
 .info {
@@ -319,6 +321,44 @@ a {
 }
 
 /* --- */
+footer a {
+  background: transparent;
+  color: $link-logo-color;
+  &:hover, &:focus {
+    background: transparent;
+    outline: $link-logo-focus-color solid 4px;
+    color: $link-logo-focus-color;
+  }
+  &:active {
+    background: transparent;
+    outline: $link-logo-active-color solid 4px;
+    color: $link-logo-color;
+    &:hover, &:focus {
+      background: transparent;
+      outline: $link-logo-active-color solid 4px;
+      color: $link-logo-active-color;
+    }
+  }
+  &:visited {
+    background: transparent;
+    color: $link-logo-color;
+    &:hover, &:focus {
+      background: transparent;
+      outline: $link-logo-focus-color solid 4px;
+      color: $link-logo-color;
+    }
+    &:active {
+      background: transparent;
+      outline: $link-logo-active-color solid 4px;
+      color: $link-logo-color;
+      &:hover, &:focus {
+        background: transparent;
+        outline: $link-logo-active-color solid 4px;
+        color: $link-logo-color;
+      }
+    }
+  }
+}
 
 a.logo {
   background: transparent;
@@ -374,9 +414,22 @@ HTML:#530000, RGB:83  0  0, DARKENED:50%
     width: 100%;
     margin: 0px;
     padding: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
   .no-print,
   .no-print * {
     display: none !important;
   }
+}
+
+/* rouge comment override */
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs,
+.highlight .c,
+.highlight .cd {
+  color: #666;
 }
