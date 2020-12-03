@@ -5,6 +5,10 @@ $brand-red: #D22730;
 $brand-black: #2D2926;
 $brand-white: #FFFFFF;
 
+$brand-red-dark: darken($brand-red, 50%);
+$brand-black-dark: darken($brand-black, 50%);
+$brand-white-dark: darken($brand-white, 50%);
+
 $link-color: blue;
 $link-visited-color: purple;
 $link-focus-color: $link-color;

@@ -2,8 +2,8 @@
 layout: article
 title: Sokrates försvarstal
 author:
-  name: Thobias Bergqvist
-  mail: thobias.bergqvist@gmail.com
+  name: John Doe
+  mail: john.doe@example.com
 date: 2019-04-16
 ---
 

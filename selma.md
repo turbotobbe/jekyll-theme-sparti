@@ -1,13 +1,11 @@
 ---
 layout: article
-title: Tiden före Gösta Berlings saga
-author:
-  name: Lisbeth Stenberg
-  mail: lisbeth.stenberg@litteraturbanken.se
+title: Gösta Berlings saga
 date: 2019-04-16
 ---
 
 Selma levde och verkade i värmland på 1800-talen. Det var nice!
+Den här artikeln har inte någon författare men ett datum.
 
 ## 1. Vägen från Mårbacka
 Selma Lagerlöf föddes år 1858 och växte upp i Värmland på gården Mårbacka. Mårbacka framstår i de minnesbilder Lagerlöf publicerat närmast som en mytisk plats fylld av lek och glädje. Det är uppenbart att den etablerade författaren valt att ge en ljus bild av sin barndom, dels i kortare texter men också i tre självbiografiska böcker som tillkom mot slutet av hennes liv. I den första, Mårbacka (1922) står gården och släkten i fokus, men mer och mer blir fadern den centrala gestalten. Genom sin charm och sin förkärlek för lek och fest gör han livet glatt. Han är sina döttrars bästa vän och lekkamrat. Lagerlöf beskriver i detta äreminne över fadern hans bästa sidor, hans nyskapande projekt och hur hans födelsedag, den 17 augusti, växer ut till något av en folkfest med lustiga upptåg men också med inslag av djup samhörighet och lycka. I Ett barns memoarer (1930) får vi följa hur barnet Selma börjar frigöra sig som en egen individ. Distansen till den älskade fadern ökar. Han blir sig aldrig lik efter en allvarlig sjukdom som drabbar honom då hon är tio år. Selma värld vidgas ytterligare när hon som fjortonåring för andra gången är i Stockholm för att gå i gymnastik för sitt dåliga ben. Hennes upplevelser under den våren, 1873, är ramen i Dagbok för Selma Ottilia Lovisa Lagerlöf (1932). Fiktionen är att Selma får en dagbok och börjar skriva. Mer än de andra delarna är detta en metatext där den åldrade författarinnan ser tillbaka på sitt skrivande. Bokens Selma ser sig som två flickor, en snäll och anpassad, och en som förvandlats till en avvikare, ett troll.

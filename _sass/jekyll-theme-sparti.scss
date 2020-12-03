@@ -2,6 +2,7 @@
 @import "variables";
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import "rouge-github";
+@import "footer";
 
 * {
   box-sizing: border-box;
@@ -170,7 +171,7 @@
 body, html {
   margin: 0px;
   padding: 0px;
-  background-color: $brand-black;
+  background-color: $brand-black-dark;
   color: $brand-white;
   line-height: 1.7rem;
   font-size: $brand-font-size;
@@ -208,11 +209,9 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  color: $brand-red;
 }
 
 header, footer {
-  text-align: center;
   background-color:  $brand-black;
   color: $brand-white;
   border-radius: 0px;
@@ -220,11 +219,12 @@ header, footer {
   position: relative;
 }
 header {
+  text-align: center;
   padding: 2rem 0rem 5rem 0rem;
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 footer {
-  padding: 4rem 0rem 1rem 0rem;
+  padding: 3rem 0rem 0rem 0rem;
   box-shadow: 0px -2px 1px -1px rgba(0,0,0,0.2),0px -1px 1px 0px rgba(0,0,0,0.14),0px -1px 3px 0px rgba(0,0,0,0.12);
 }
 
@@ -234,7 +234,6 @@ footer {
   position: relative;
   z-index: 0;
 }
-
 main {
   max-width: 45rem;
   margin: -3rem auto;
@@ -248,10 +247,13 @@ main {
 .content-wrapper {
   max-width: 33rem;
   margin: auto;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $brand-red;
+  }
 }
 
-body.error h1 {
-}
+body.error h1 {}
 
 .info {
   text-align: right;
@@ -267,9 +269,9 @@ body main article h1:first-of-type {
   text-align: center;
 }
 
-.meta {
+.page-date, .page-author {
   font-style: italic;
-  text-align: right;
+  text-align: center;
 }
 a {
   color: $link-color;
@@ -321,44 +323,6 @@ a {
 }
 
 /* --- */
-footer a {
-  background: transparent;
-  color: $link-logo-color;
-  &:hover, &:focus {
-    background: transparent;
-    outline: $link-logo-focus-color solid 4px;
-    color: $link-logo-focus-color;
-  }
-  &:active {
-    background: transparent;
-    outline: $link-logo-active-color solid 4px;
-    color: $link-logo-color;
-    &:hover, &:focus {
-      background: transparent;
-      outline: $link-logo-active-color solid 4px;
-      color: $link-logo-active-color;
-    }
-  }
-  &:visited {
-    background: transparent;
-    color: $link-logo-color;
-    &:hover, &:focus {
-      background: transparent;
-      outline: $link-logo-focus-color solid 4px;
-      color: $link-logo-color;
-    }
-    &:active {
-      background: transparent;
-      outline: $link-logo-active-color solid 4px;
-      color: $link-logo-color;
-      &:hover, &:focus {
-        background: transparent;
-        outline: $link-logo-active-color solid 4px;
-        color: $link-logo-color;
-      }
-    }
-  }
-}
 
 a.logo {
   background: transparent;

@@ -1,10 +1,7 @@
 ---
 layout: article
 title: Lorem ipsum
-author:
-  name: Thobias Bergqvist
-  mail: thobias.bergqvist@gmail.com
-date: 2019-03-09
+excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
 Det här är några olika paragrafer som innehåller olika många tecken. Detta för att underlätta för att se hur bred texten blir.

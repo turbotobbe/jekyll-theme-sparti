@@ -1,8 +1,17 @@
-title: Sparti theme
-description: This is a Jekyll theme for sparti.se GitHub Pages
+title: Sparti
+description: This is a Jekyll theme for sparti.se to be used in GitHub Pages.
+organisation: Sparti AB
 contact:
-  mail: contact@sparti-theme.com
+  mail: anyone@sparti.se
+  phone: 073 - 123 45 67
+
+footer:
+  - url: /lorem.html
+  - url: /platon.html
+  - url: /selma.html
+
 google_analytics:
+
 remote_theme: turbotobbe/jekyll-theme-sparti
 plugins:
   - jekyll-seo-tag

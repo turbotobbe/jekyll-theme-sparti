@@ -3,11 +3,30 @@ layout: default
 ---
 <article>
   <h1>{{ page.title }}</h1>
-  {{ content }}
-  {% if page.author %}
-  <div class="info">
-    <div class="page-date">{{ page.date | default: site.time | date_to_string }}</div>
-    <div class="page-author"><a href="mailto:{{ page.author.mail }}">{{ page.author.name }}</a></div>
+  {% if page.date %}
+  <div class="page-date">
+    <!-- Whitespace added for readability -->
+    {{ page.date | date: "%-d" }}
+    {% assign m = page.date | date: "%-m" %}
+    {% case m %}
+      {% when '1' %}Januari,
+      {% when '2' %}Februari,
+      {% when '3' %}Mars,
+      {% when '4' %}April,
+      {% when '5' %}Maj,
+      {% when '6' %}Juni,
+      {% when '7' %}Juli,
+      {% when '8' %}Augusti,
+      {% when '9' %}September,
+      {% when '10' %}Oktober,
+      {% when '11' %}November,
+      {% when '12' %}December,
+    {% endcase %}
+    {{ page.date | date: "%Y" }}
   </div>
   {% endif %}
+  {% if page.author %}
+  <div class="page-author"><a href="mailto:{{ page.author.mail }}">{{ page.author.name }}</a></div>
+  {% endif %}
+  {{ content }}
 </article>
