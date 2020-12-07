@@ -1,10 +1,8 @@
 ---
 layout: article
 title: Sokrates försvarstal
-author:
-  name: John Doe
-  mail: john.doe@example.com
-date: 2019-04-16
+author: john.doe
+date: 2000-02-29
 ---
 
 Sokrates försvarstal (grekiska Ἀπολογία Σωκράτους) är en (troligen) tidig text av Platon i vilken han återger det försvarstal Sokrates skall ha hållit år 399 f.Kr. vid den rättegång där han dömdes till döden av atenarna. Den kallas även Apologin eller bara Försvarstalet. I den återger Sokrates anklagelserna mot sig själv som ogudaktig och en ungdomens förförare.

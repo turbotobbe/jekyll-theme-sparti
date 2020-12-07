@@ -1,11 +1,17 @@
 title: Sparti
 description: This is a Jekyll theme for sparti.se to be used in GitHub Pages.
-organisation: Sparti AB
+
+copyright:
+  year: 2020
+  org: Sparti AB
+
 contact:
   mail: anyone@sparti.se
-  phone: 073 - 123 45 67
+  phone:
+    coded: "+46731234567"
+    label: "073 123 45 67"
 
-footer:
+navigation:
   - url: /lorem.html
   - url: /platon.html
   - url: /selma.html

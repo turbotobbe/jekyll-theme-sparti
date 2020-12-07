@@ -1,0 +1,4 @@
+{% assign author = site.data.authors[include.key] %}
+{% if author %}
+<a href="mailto:{{ author.mail }}">{{ author.name }}</a>
+{% endif %}

@@ -1,36 +1,36 @@
 <footer class="no-print">
   <!-- Footer main -->
-  <section class="ft-main">
-    <div class="ft-main-item flex">
-      <h2 class="ft-title">{{ site.title }}</h2>
-      <p>{{ site.description }}</p>
-    </div>
-    <div class="ft-main-item">
-      <h2 class="ft-title">Sidor</h2>
-      <ul>
-        {% for item in site.footer %}
-          {% for page in site.pages %}
-           {% if item.url == page.url %}
-           <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
-           {% endif %}
-          {% endfor %}
-        {% endfor %}
-      </ul>
-    </div>
+  <div class="ft-main">
     <div class="ft-main-item">
       <h2 class="ft-title">Kontakt</h2>
       <ul>
-        <li>{{ site.contact.phone }}</li>
-        <li><a href="mailto:{{ site.contact.mail }}">{{ site.contact.mail }}</a></li>
+        <li>Telefon: <a href="tel:{{ site.contact.phone.coded }}">{{ site.contact.phone.label }}</a></li>
+        <li>E-post: <a href="mailto:{{ site.contact.mail }}">{{ site.contact.mail }}</a></li>
       </ul>
     </div>
-  </section>
+    <div class="ft-main-item">
+      <nav>
+        <h2 class="ft-title">Sidor</h2>
+        <ul>
+          {% for nav in site.navigation %} {% for page in site.pages %} {% if nav.url == page.url %}
+          <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+          {% endif %} {% endfor %} {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div class="ft-main-item flex">
+      <h2 class="ft-title">Om oss</h2>
+      <p><strong>{{ site.title }}</strong><br />{{ site.description }}</p>
+    </div>
+  </div>
   <!-- Footer legal -->
-  <section class="ft-legal">
+  <div class="ft-legal">
     <ul class="ft-legal-list">
-      <li>&copy; 2019 {{ site.organisation }}</li>
+      <li>&copy; {{ site.copyright.year }} {{ site.copyright.org }}</li>
       <li class="flex"></li>
-      <li>Genererad {{ site.time | date_to_string }}</li>
+      <li>
+        Genererad {% include site_date.html %}
+      </li>
     </ul>
-  </section>
+  </div>
 </footer>
