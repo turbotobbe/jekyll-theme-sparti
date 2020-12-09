@@ -3,13 +3,14 @@ layout: default
 ---
 <article>
   <h1>{{ page.title }}</h1>
+  <span>Uppdaterad</span>
+  <i>{% include page_date.html%}</i>
   {% if page.author %}
-  <div class="page-author">
-    Skrivet av: {% include author.html key=page.author %}
-  </div>
+  av
+  {% include author.html key=page.author %}
   {% endif %}
-  <div class="page-date">
-    Uppdaterad: {% include page_date.html %}
-  </div>
+  <hr />
   {{ content }}
+
+
 </article>

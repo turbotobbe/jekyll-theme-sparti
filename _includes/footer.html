@@ -4,15 +4,17 @@
     <div class="ft-main-item">
       <h2 class="ft-title">Kontakt</h2>
       <ul>
-        <li>Telefon: <a href="tel:{{ site.contact.phone.coded }}">{{ site.contact.phone.label }}</a></li>
-        <li>E-post: <a href="mailto:{{ site.contact.mail }}">{{ site.contact.mail }}</a></li>
+        <li><b>Telefon</b></li>
+        <li><a href="tel:{{ site.contact.phone.href }}">{{ site.contact.phone.text }}</a></li>
+        <li><b>E-post</b></li>
+        <li><a href="mailto:{{ site.contact.mail }}">{{ site.contact.mail }}</a></li>
       </ul>
     </div>
     <div class="ft-main-item">
       <nav>
         <h2 class="ft-title">Sidor</h2>
         <ul>
-          {% for nav in site.navigation %} {% for page in site.pages %} {% if nav.url == page.url %}
+          {% for nav in site.footer.navigation %} {% for page in site.pages %} {% if nav.url == page.url %}
           <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
           {% endif %} {% endfor %} {% endfor %}
         </ul>

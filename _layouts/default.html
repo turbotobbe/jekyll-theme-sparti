@@ -16,22 +16,19 @@
   {% endif %}
 
   <meta charset="UTF-8">
-{% seo %}
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#2D2926">
+  <!--  <meta name="theme-color" content="#2D2926"> -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="{{ '/assets/css/sparti.css' | relative_url }}">
+
+{% seo %}
+{% include favicon.html %}
 </head>
 <body class="{{ page.body_class }}">
-  <div class="main-wrapper">
-    {% include header.html %}
-    <main>
-      <div class="content-wrapper">
-        {{ content }}
-      </div>
-    </main>
-    {% include footer.html %}
-  </div>
+{% include header.html %}
+<main>
+{{ content }}
+</main>
+{% include footer.html %}
 </body>
 </html>

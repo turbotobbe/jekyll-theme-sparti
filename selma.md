@@ -35,7 +35,7 @@ De första åren i Stockholm var Selma Lagerlöf inackorderad hos sin släkting 
 
 Hösten 1882, 23 år gammal, gjorde Selma Lagerlöf sitt inträde i lärarinneseminariet. I den biografi över Lagerlöf som utgavs åren efter hennes död gör Elin Wägner följande träffande jämförelse ”Vid den ålder i livet då Heidenstam företog sin första bröllops- och Nansen sin första ishavsresa och Strindberg skrev Mäster Olof, gjorde Selma Lagerlöf sitt inträde i seminariet.”[13] Selma Lagerlöf var lite äldre än de flesta i klassen, hade en lång dubbelfläta och talade dialekt. Till en början höll hon sig för sig själv. Hon vann respekt för sina kunskaper och sin flitiga läxläsning men det tog en viss tid för henne att komma in i kamratkretsen. Det andra året upptäcktes det att hon skrivit sonetter med en ironisk udd om både lärare och elever. Det gjorde henne populär hos kamraterna men det fanns lärare som tog illa upp.
 
-### 2.1 sonetter om lärare
+### 2.1 sonetter om lärare som inte kan nålla svansen i styr.
 För lärarporträtten hämtar Lagerlöf stoff från litteratur och historia. Rektorn, Julius Humble, blir en riddare av La Mancha något han inte uppskattade. Lektor Sigfrid Almqvist liknas vid en Faust som stannat vid sin penna och doktor Erik Lindgren ”en Frans-den-förste-typ” som man var rädd för. Det finns flera inslag i sonetterna som visar att Lagerlöf kan ha upplevt undervisningen som hårt formande. Doktor Nils Lagerstedt var snäll, men att pressa livet ur växter tilltalade inte den blivande författaren, som avslutade sonetten om honom med att jämföra behandlingen av blommor och elever:
 
 > Då livets blompress riktigt trycktes ned,

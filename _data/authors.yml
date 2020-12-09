@@ -1,7 +1,7 @@
 john.doe:
   name: John Doe
-  mail: john.doe@balls.com
+  mail: john.doe@example.com
 
 jane.doe:
   name: Jane Doe
-  mail: jane.doe@balls.com
+  mail: jane.doe@example.com
