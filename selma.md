@@ -1,6 +1,8 @@
 ---
 layout: article
 title: Gösta Berlings saga
+description: Hur uppkom Gösta Berlings saga? Det här är historien bakom skapandet.
+author: jane.doe
 date: 2019-04-16
 ---
 

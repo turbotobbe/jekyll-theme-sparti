@@ -17,6 +17,17 @@ copyright:
   year: 2020
   org: Sparti AB
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      locale: sv_SE
+      image:
+        path: /assets/images/SPARTI_logo_white_color.jpg
+        width: 1754
+        height: 1400
+
+
 google_analytics:
 
 remote_theme: turbotobbe/jekyll-theme-sparti

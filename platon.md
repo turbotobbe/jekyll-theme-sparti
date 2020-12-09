@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Sokrates försvarstal
+description: Historien bakom den grekiske filosofen Sokrates försvarstal år 399. Talet är en text av Platon, precis som det brukar vara.
 author: john.doe
 date: 2000-02-29
 ---

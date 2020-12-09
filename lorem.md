@@ -1,7 +1,11 @@
 ---
 layout: article
 title: Lorem ipsum
-excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+image:
+  path: /assets/images/SPARTI_logo_standard.jpg
+  width: 1754
+  height: 1400
 ---
 
 Det här är några olika paragrafer som innehåller olika många tecken. Detta för att underlätta för att se hur bred texten blir.
