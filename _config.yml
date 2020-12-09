@@ -24,9 +24,8 @@ defaults:
       locale: sv_SE
       image:
         path: /assets/images/SPARTI_logo_1200x1200.jpg
-        width: 1754
-        height: 1400
-
+        width: 1200
+        height: 1200
 
 google_analytics:
 
