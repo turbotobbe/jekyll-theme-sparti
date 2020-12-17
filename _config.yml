@@ -1,5 +1,6 @@
 title: Sparti
 description: This is a Jekyll theme for sparti.se to be used in GitHub Pages.
+orgnr: 123456-7890
 
 footer:
   navigation:
@@ -12,6 +13,9 @@ contact:
   phone:
     href: "+46731234567"
     text: "073 123 45 67"
+  # adress:
+  #   street: Storgatan 123
+  #   postal: 58 123 Ankeborg
 
 copyright:
   year: 2020

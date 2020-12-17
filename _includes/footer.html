@@ -2,15 +2,6 @@
   <!-- Footer main -->
   <div class="ft-main">
     <div class="ft-main-item">
-      <h2 class="ft-title">Kontakt</h2>
-      <ul>
-        <li><b>Telefon</b></li>
-        <li><a href="tel:{{ site.contact.phone.href }}">{{ site.contact.phone.text }}</a></li>
-        <li><b>E-post</b></li>
-        <li><a href="mailto:{{ site.contact.mail }}">{{ site.contact.mail }}</a></li>
-      </ul>
-    </div>
-    <div class="ft-main-item">
       <nav>
         <h2 class="ft-title">Sidor</h2>
         <ul>
@@ -22,8 +13,32 @@
     </div>
     <div class="ft-main-item flex">
       <h2 class="ft-title">Om oss</h2>
-      <p><strong>{{ site.title }}</strong><br />{{ site.description }}</p>
+      <p>
+        <div class="ft-subtitle">
+          Org.nr
+        </div>
+        {{ site.orgnr }}
+        <strong style="display: block; margin-top: 1rem;">{{ site.title }}</strong>
+        {{ site.description }}
+      </p>
     </div>
+    <div class="ft-main-item">
+        <h2 class="ft-title">Kontakt</h2>
+        <p>
+        <address>
+          <div class="ft-subtitle">Telefon</div>
+          <a href="tel:{{ site.contact.phone.href }}">{{ site.contact.phone.text }}</a>
+          <div class="ft-subtitle">E-post</div>
+          <a href="mailto:{{ site.contact.mail }}">{{ site.contact.mail }}</a>
+          <!--
+          <div class="ft-subtitle">Besöksadress</i>
+          {{ site.contact.adress.street}}<br />
+          {{ site.contact.adress.postal}}
+          -->
+        </address>
+      </p>
+    </div>
+
   </div>
   <!-- Footer legal -->
   <div class="ft-legal">

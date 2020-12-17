@@ -1,6 +1,7 @@
 @import "normalize";
 @import "variables";
-@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
 @import "rouge-github";
 
 /* rouge comment override */
@@ -30,6 +31,10 @@ body, html {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arbutus Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -38,7 +43,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.5rem;
   line-height: 3.0rem;
-  /*margin: 1rem 0px 2rem 0px;*/
 }
 
 h2 {
@@ -165,6 +169,21 @@ HTML:#6C0000, RGB:108  0  0, DARKENED:40%
 HTML:#530000, RGB:83  0  0, DARKENED:50%
 */
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  main {
+    flex: 1;
+    width: 100%;
+  }
+  header, footer {
+   flex-shrink: 0;
+  }
+}
+address {
+  font-style: normal;
+}
 @import "header";
 @import "footer";
 @import "main";

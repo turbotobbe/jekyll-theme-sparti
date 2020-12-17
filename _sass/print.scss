@@ -4,9 +4,15 @@
     width: 100%;
     margin: 0px;
     padding: 0px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  body > header,
+  body > footer {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
   }
   .no-print,
   .no-print * {
