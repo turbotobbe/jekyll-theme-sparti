@@ -21,6 +21,10 @@ copyright:
   year: 2020
   org: Sparti AB
 
+collections:
+  people:
+    output: false
+
 defaults:
   - scope:
       path: ""

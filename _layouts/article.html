@@ -4,12 +4,23 @@ layout: default
 <article>
   <h1>{{ page.title }}</h1>
   <span>Uppdaterad</span>
-  <span>{% include page_date.html%}</span>
+  {% if page.date %}
+  <span>{% include date.html date=page.date %}</span>
+  {% else %}
+  <span>{% include date.html date=site.time %}</span>
+  {% endif %}
   {% if page.author %}
-  <span>av</span>
-  {% include author.html key=page.author %}
+    <span>av</span>
+    {% for person in site.people %}
+      {% if page.author == person.key %}
+      <a href="mailto:{{ person.mail }}">{{ person.name }}</a>
+      {% endif %}
+    {% endfor %}
   {% endif %}
   <hr />
+  {% if page.description %}
+  <p class="ingress">{{ page.description}}</p>
+  {% endif %}
   {{ content }}
 
 </article>

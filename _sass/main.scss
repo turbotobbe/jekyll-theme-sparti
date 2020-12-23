@@ -156,8 +156,7 @@ body > main {
     color: $brand-red;
   }
 
-  article > p:first-of-type,
-  section > p:first-of-type
+  p.ingress
   {
     font-size: 1.5rem;
     line-height: 2.2rem;

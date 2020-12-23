@@ -2,8 +2,8 @@
   <!-- Footer main -->
   <div class="ft-main">
     <div class="ft-main-item">
-      <nav>
-        <h2 class="ft-title">Sidor</h2>
+      <nav aria-labelledby="nav-pages">
+        <h2 id="nav-pages" class="ft-title">Sidor</h2>
         <ul>
           {% for nav in site.footer.navigation %} {% for page in site.pages %} {% if nav.url == page.url %}
           <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>

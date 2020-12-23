@@ -29,6 +29,10 @@ copyright:
   year: 2020
   org: Balls Inc
 
+collections:
+  people:
+    output: false
+
 defaults:
   - scope:
       path: ""
@@ -52,7 +56,7 @@ This is an example of the front mapper of an article.
 
 * `title` will render as h1-tag and be used in title and tabs.
 * `description` will only be used for opengraph descriptiong an in the title.
-* `author` should be a key matching an author in _data/authors.yml. This can be left out if it is a regular page without a meaningful author.
+* `author` should be a key matching a person in _people/person.md. This can be left out if it is a regular page without a meaningful author.
 * `date` is the data when the article is published or revised.
 
 ```markdown
@@ -60,16 +64,16 @@ This is an example of the front mapper of an article.
 layout: article
 title: When balls are flying
 description: There are not only birds in the air, there are also balls flying alla over the place.
-author: john.doe
+author: john-doe
 date: 2018-04-16
 ---
-
-The first paragraf is reserved for the ingress. It should be a breaf summary of the entire article. It should not be a teaser to get people to read more. That is up to the reader.
 
 ## In the beginning
 
 This paragraph, and the rest of the article, is regular markdown.
 ```
+
+The first paragraf will include the description of the page and is reserved for the ingress. It should be a breaf summary of the entire article. It should not be a teaser to get people to read more. That is up to the reader.
 
 When writing an article remember the following:
 
@@ -81,15 +85,20 @@ When writing an article remember the following:
 * When using images, describe the image with your text. i.e. ![Firefly on leaf](https://en.wikipedia.org/wiki/Firefly#/media/File:Photuris_lucicrescens.jpg)
 * Use the [formating from github](https://guides.github.com/features/mastering-markdown/)
 
-## Authors
+## People
 
-All authors should be specified in the file _data/authors.yml
-```yml
-john.doe:
-  name: John Doe
-  mail: john.doe@example.com
+All people should be specified in the collection _people. Every person will have a personal file like this.
+```markdown
+---
+key: jane-doe
+active: true
+name: Jane Doe
+mail: jane.doe@example.com
+phone:
+  href: "+4671234568"
+  text: "073 123 45 68"
+date: 2020-12-25
+---
 
-jane.doe:
-  name: Jane Doe
-  mail: jane.doe@example.com
+Jane Doe is one of the girls here.
 ```
