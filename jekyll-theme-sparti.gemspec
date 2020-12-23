@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = 'jekyll-theme-sparti'
-  s.version       = '0.1.3'
+  s.version       = '0.1.4'
   s.license       = 'CC0-1.0'
   s.authors       = ['Thobias Bergqvist', 'Sparti AB']
   s.email         = ['thobias.bergqvist@sparti.se']
